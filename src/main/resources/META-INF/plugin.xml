@@ -1,8 +1,8 @@
 <idea-plugin>
-    <id>com.your.company.unique.plugin.id</id>
+    <id>Background Image</id>
     <name>Background Image</name>
     <version>1.0.1</version>
-    <vendor email="pettyferlove@live.cn" url="https://github.com/pettyferlove"/>
+    <vendor email="pettyferlove@live.cn" url="https://github.com/pettyferlove">AlexPettyfer</vendor>
 
     <description><![CDATA[
       Set the editor background to a random picture from a folder.<br>
