@@ -1,0 +1,60 @@
+<idea-plugin>
+    <id>com.your.company.unique.plugin.id</id>
+    <name>Background Image</name>
+    <version>1.0.1</version>
+    <vendor email="pettyferlove@live.cn" url="https://github.com/pettyferlove"/>
+
+    <description><![CDATA[
+      Set the editor background to a random picture from a folder.<br>
+      Forked from https://github.com/lachlankrautz/backgroundImagePlus.<br>
+      But optimized for change function.<br>
+      reference fork:<br>
+            https://github.com/godfather1103/backgroundImagePlus<br>
+            https://github.com/zhanglanzhu521/backgroundImagePlus<br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <html>
+        <h3>1.0.1</h3>
+        <ul>
+          <li>1.空指针异常优化</li>
+        </ul>
+        <h3>1.0.0</h3>
+        <ul>
+          <li>1.优化调整原有代码</li>
+          <li>2.兼容性调整</li>
+        </ul>
+      </html>
+    ]]>
+    </change-notes>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationConfigurable groupId="appearance" groupWeight="20" id="BackgroundImageSettings"
+                                 displayName="Background Image Settings"
+                                 instance="com.pettyfer.intellijPlugin.backgroundImage.ui.Settings"/>
+    </extensions>
+
+    <actions>
+        <group id="backgroundImage" text="Background Image" description="Background Image">
+            <add-to-group group-id="ViewMenu" anchor="last"/>
+            <separator/>
+            <action id="RandomBackgroundImage" class="com.pettyfer.intellijPlugin.backgroundImage.action.RandomBackground"
+                    text="Random Background Image" description="Randomly select background">
+            </action>
+            <action id="ClearBackgroundImage" class="com.pettyfer.intellijPlugin.backgroundImage.action.ClearBackground"
+                    text="Clear Background Image" description="Clear the currently set background">
+            </action>
+            <action id="NextBackgroundImage" class="com.pettyfer.intellijPlugin.backgroundImage.action.NextBackground"
+                    text="Next Background Image">
+            </action>
+        </group>
+    </actions>
+
+</idea-plugin>
