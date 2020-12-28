@@ -18,12 +18,10 @@ public class BackgroundTask implements Runnable {
         String area = prop.getValue(Settings.BACKGROUND_SET_AREA);
         String image = null;
         if (folder == null || folder.isEmpty()) {
-            Notice.send("Image folder not set");
             return;
         }
         File file = new File(folder);
         if (!file.exists()) {
-            Notice.send("Image folder not set");
             return;
         }
         image = ImagesSelectorSingleton.instance.getRandomImage(folder);
