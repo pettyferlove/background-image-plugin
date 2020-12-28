@@ -6,6 +6,7 @@ target/
 logs/
 temp/
 .flattened-pom.xml
+out
 
 ### STS ###
 .apt_generated
