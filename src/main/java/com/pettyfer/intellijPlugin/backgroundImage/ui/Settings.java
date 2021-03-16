@@ -162,7 +162,9 @@ public class Settings implements Configurable {
         selectRadioButton(prop.getValue(BACKGROUND_SET_AREA));
     }
 
+
     @Override
+    @SuppressWarnings("AlibabaLowerCamelCaseVariableNaming")
     public void disposeUIResources() {
         boolean autoChange = autoChangeCheckBox.isSelected();
         int interval = ((SpinnerNumberModel) intervalSpinner.getModel()).getNumber().intValue();
@@ -173,6 +175,7 @@ public class Settings implements Configurable {
         }
     }
 
+    @SuppressWarnings("AlibabaLowerCamelCaseVariableNaming")
     private void createUIComponents() {
         RandomBackgroundService.stop();
         PropertiesComponent prop = PropertiesComponent.getInstance();

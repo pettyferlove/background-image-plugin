@@ -20,6 +20,7 @@ public class ClearBackground extends AnAction {
         prop.setValue(IdeBackgroundUtil.FRAME_PROP, null);
         prop.setValue(IdeBackgroundUtil.TARGET_PROP, null);
         prop.setValue(Settings.AUTO_CHANGE, false);
+        prop.setValue(Settings.IMAGES_FOLDER, null);
         RandomBackgroundService.stop();
     }
 }
