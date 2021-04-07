@@ -36,9 +36,6 @@ public class RandomBackgroundService {
                 case 0:
                     timeUnitEnum = TimeUnit.SECONDS;
                     break;
-                case 1:
-                    timeUnitEnum = TimeUnit.MINUTES;
-                    break;
                 case 2:
                     timeUnitEnum = TimeUnit.HOURS;
                     break;
