@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.github.pettyfer'
-version '1.0.6'
+version '1.0.7'
 sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
@@ -18,12 +18,16 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '2021.2.3'
+    version = '2021.3'
 }
 patchPluginXml {
     changeNotes = """
       <html>
-        <h3>1.0.5</h3>
+        <h3>1.0.7</h3>
+        <ul>
+          <li>1.基础库升级至2021.3</li>
+        </ul>
+        <h3>1.0.6</h3>
         <ul>
           <li>1.基础库升级至2021.2.3</li>
         </ul>
